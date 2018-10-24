@@ -1209,4 +1209,57 @@ article ol,
       right: -260px;
       bottom: -104px; } }
 
+.delivery-section h2 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0; }
+.delivery-section .title-group h2 {
+  margin-bottom: 0; }
+.delivery-section .title-group p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px; }
+.delivery-section .styled-list li {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 14px; }
+.delivery-section .styled-list span {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 23px;
+  font-size: 14px;
+  color: #000000; }
+.delivery-section .styled-list table th,
+.delivery-section .styled-list table td {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 14px;
+  color: #000000; }
+  .delivery-section .styled-list table th:first-child,
+  .delivery-section .styled-list table td:first-child {
+    padding-right: 16px;
+    max-width: 355px; }
+.delivery-section .styled-list table b {
+  font-weight: 700;
+  color: #000000; }
+.delivery-section .note-group {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #737373; }
+  .delivery-section .note-group span {
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #737373; }
+
 /*# sourceMappingURL=style.css.map */
