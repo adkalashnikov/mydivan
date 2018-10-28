@@ -1,0 +1,158 @@
+.payments-section {
+  p {
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+  }
+
+  .title {
+    @extend .ion-title;
+  }
+}
+
+.page {
+  .styled-list {
+    margin: 0;
+  }
+}
+
+.assembly-section {
+  position: relative;
+
+  @media (min-width: 1200px) {
+    &.wpb_row {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+  }
+
+  .title {
+    @extend .ion-title;
+  }
+
+  .bg-image {
+    @media (min-width: 1200px) {
+      position: absolute;
+      right: -260px;
+      bottom: -104px;
+    }
+  }
+}
+
+.delivery-section {
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 0;
+  }
+
+  .title-group {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 14px;
+    }
+  }
+
+  .styled-list {
+    li {
+      font-style: normal;
+      font-weight: normal;
+      line-height: 23px;
+      font-size: 14px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 23px;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    table {
+      th,
+      td {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        font-size: 14px;
+        color: #000000;
+
+        &:first-child {
+          padding-right: 16px;
+          max-width: 355px;
+        }
+      }
+
+      b {
+        font-weight: 700;
+        color: #000000;
+      }
+    }
+  }
+
+  .note-group {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #737373;
+
+    span {
+      font-style: normal;
+      line-height: normal;
+      font-weight: bold;
+      font-size: 14px;
+      color: #737373;
+    }
+  }
+
+  .text-default {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #000000;
+
+    p {
+      @extend .text-default;
+    }
+  }
+
+  .text-secondary {
+    @extend .text-default;
+    color: #737373;
+
+    p {
+      @extend .text-secondary;
+    }
+  }
+
+  strong {
+    @extend .text-default;
+    font-weight: 700;
+  }
+}
+
+.warranty-section {
+
+}

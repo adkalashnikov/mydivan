@@ -1,0 +1,110 @@
+footer {
+  margin-top: 100px;
+}
+
+.footer1 {
+  width: 100%;
+  min-height: 235px;
+  background: #000;
+  padding-top: 60px;
+}
+
+.footer2 {
+  width: 100%;
+  height: 85px;
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.f1-item {
+  float: left;
+}
+
+.f1i1 {
+  width: 160px;
+  padding-left: 30px;
+  background: url(images/phone.png) no-repeat 0 0;
+}
+
+.f1-phone {
+  color: #fff;
+  font-weight: 800;
+}
+
+.f1-phone span {
+  font-weight: 300;
+}
+
+#f1-mail {
+  font-size: 14px;
+  color: #737373;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.f1i2 {
+  margin-left: 140px;
+}
+
+#foo-nav, #foo-nav2 {
+  list-style: none;
+}
+
+#foo-nav li, #foo-nav2 li {
+  margin-bottom: 5px;
+}
+
+#foo-nav li > a, #foo-nav2 li > a {
+  color: #fff;
+}
+
+#foo-nav li > a:hover, #foo-nav2 li > a:hover {
+  color: #feca16;
+}
+
+.f1i3 {
+  margin-left: 140px;
+}
+
+.f1i4 {
+  color: #737373;
+  width: 230px;
+  margin-left: 150px;
+}
+
+.f1i4 p {
+  font-size: 14px;
+}
+
+.footer2 {
+  padding-top: 28px;
+}
+
+.f2-text {
+  width: 512px;
+  float: left;
+  color: #737373;
+}
+
+.f2-text p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.f2-text2 {
+  width: 265px;
+  float: right;
+  color: #737373;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.f2-text2 a {
+  color: #737373;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.f2-text2 a:hover {
+  color: #feca16;
+}
