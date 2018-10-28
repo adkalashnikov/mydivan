@@ -8,7 +8,7 @@
   }
 
   .title {
-    @extend .ion-title;
+    @extend %title;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   .title {
-    @extend .ion-title;
+    @extend %title;
   }
 
   .bg-image {
@@ -50,26 +50,11 @@
 
 .delivery-section {
   h2 {
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: 0;
+    @extend %sub-title;
   }
 
   .title-group {
-    h2 {
-      margin-bottom: 0;
-    }
-
-    p {
-      font-style: normal;
-      font-weight: normal;
-      line-height: normal;
-      font-size: 14px;
-    }
+    @extend %title-group;
   }
 
   .styled-list {
@@ -127,32 +112,36 @@
   }
 
   .text-default {
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 14px;
-    color: #000000;
-
-    p {
-      @extend .text-default;
-    }
+    @extend %text-default;
   }
 
   .text-secondary {
-    @extend .text-default;
-    color: #737373;
-
-    p {
-      @extend .text-secondary;
-    }
+    @extend %text-secondary;
   }
 
   strong {
-    @extend .text-default;
-    font-weight: 700;
+    @extend %text-strong;
   }
 }
 
 .warranty-section {
+  .title-group {
+    @extend %title-group;
+  }
 
+  .text-secondary {
+    @extend %text-secondary;
+  }
+
+  .text-default {
+    @extend %text-default;
+
+    li {
+      @extend %text-default;
+    }
+  }
+
+  strong {
+    @extend %text-strong;
+  }
 }
