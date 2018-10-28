@@ -34,14 +34,4 @@ $(document).ready(function() {
     },function(){
       $('.swatch-anchor-big-img, .tkan-title').remove();
     });
-
-    //менюха
-    $('#head-m-nav-btn').on('click', function(e) {
-        e.preventDefault();
-        $('#c-menu--slide-left').toggleClass('is-active');
-    });
-    $('#close-left').on('click', function(e) {
-        e.preventDefault();
-        $('#c-menu--slide-left').removeClass('is-active');
-    });
 });

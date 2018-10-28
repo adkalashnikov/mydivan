@@ -50,7 +50,6 @@
 	<div class="container">
 
 		<div class="head-m-logo"><a href="<?php echo home_url(); ?>"></a></div>
-		<a href="#" id="head-m-nav-btn"></a>
 		<a href="#" id="head-m-search-btn"></a>
 	
 		<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
@@ -78,18 +77,3 @@
 	</div>
 
 	</header>
-
-
-<div class="c-menu--slide-left" id="c-menu--slide-left">
-	<div id="msl-logo"><a href="<?php echo home_url(); ?>"></a></div>
-	<div id="close-left"></div>
-	<div class="clear"></div>
-	<?php $args = array( 
-		'theme_location' => 'bottom',
-		'container'=> 'nav', // обертка списка
-  	'menu_id' => 'slideleft-nav', // id для ul
-			);
-		wp_nav_menu($args); // выводим верхнее меню
-?>
-</div>
-
