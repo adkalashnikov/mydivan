@@ -28,7 +28,13 @@
 	<div class="head-top">
 		<div class="container">
 			<div class="head-t-left">
-				интернет-магазин мягкой мебели MYDIVAN
+                <?php
+                    $args = array(
+                    'theme_location' => 'header',
+                    'container'=> 'nav',
+                    );
+                    wp_nav_menu($args); // выводим верхнее меню
+                ?>
 			</div>
 			<div class="head-t-right">
 				<a href="tel:+380674731470"><span>(067)</span> 473-14-70</a>

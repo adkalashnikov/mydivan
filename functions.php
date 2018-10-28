@@ -18,6 +18,7 @@ function typical_title() { // функция вывода тайтла
 
 register_nav_menus(array( // Регистрируем 2 меню
 	'top' => 'Верхнее', // Верхнее
+	'header' => 'Хедер', // Верхнее
 	'bottom' => 'Футер',
 	'bottom-tovar' => 'Футер2'
 ));
