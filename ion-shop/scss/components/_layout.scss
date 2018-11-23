@@ -58,3 +58,10 @@ h2 {
     margin-bottom: 20px;
   }
 }
+
+// update from prod
+.grid {display: grid; grid-gap: 50px; grid-template-columns: 1fr 1fr 1fr 1fr; margin: 50px 0;}
+.grid a {display: block; text-align: center;}
+.grid a img {max-width: 100%; height: auto; }
+.tmb a img {width: 80px; height: auto;}
+//=============================================================================================

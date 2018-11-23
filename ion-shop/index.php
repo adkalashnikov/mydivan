@@ -55,7 +55,7 @@ get_header(); // подключаем header.php ?>
 	
 	<div>
 	<div class="fp-cat-50 fpc1">
-		<?php echo do_shortcode('[product_categories ids="7" number="12" parent="0" columns="1"]');
+		<?php echo do_shortcode('[product_categories ids="220" number="12" parent="0" columns="1"]');
 		  ?>
 	</div>	
 	<div class="fp-cat-50 fpc2">
@@ -112,7 +112,7 @@ get_header(); // подключаем header.php ?>
 			$args = array(
 			'cat' => 12,
 			'posts_per_page' => 1
-				);
+			);
 
 		$query = new WP_Query( $args );
 
@@ -137,13 +137,10 @@ get_header(); // подключаем header.php ?>
 
 		<div class="clear"></div>
 		<?php
-
 		$args = array(
 		'page_id' => 18,
-			);
-
+		);
 		$query = new WP_Query( $args );
-
 		// Цикл
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
@@ -159,20 +156,9 @@ get_header(); // подключаем header.php ?>
 			// Постов не найдено
 		}
 		wp_reset_postdata();
-
 	 ?>	
-
-		
-
-
 </div>
 </div>
 <div class="clear"></div>
-
-
-
-
-
-
 </section>
 <?php get_footer(); // подключаем footer.php ?>

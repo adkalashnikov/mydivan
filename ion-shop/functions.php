@@ -158,73 +158,31 @@ function my_single_prod_text(){
 	
 	echo "<div class=\"my-line\"></div>
 			<div class=\"single-product-atr-title tkan\">Подбор ткани для мягкой мебели</div>
-			<p>";
+<div class=\"tmb\">
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/printy-novye/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/NAPOLI-01-thumb-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/bari/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/BARI-9002-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/deluxe/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/DELUXE-4173-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/indigo/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/INDIGO-23-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/marco-polo/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/MARCO-POLO-61020-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/platinum/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/PLATINUM-33-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/salsa/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/SALSA-21-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/puerto/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/PUERTO-18-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/verona-light/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/VERONA-LIGHT-05-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/avis/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/AVIS-37-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/garden/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/GARDEN-V-005-150x150.jpg\"></a>
+<a target=\"_blank\" href=\"http://www.mydivan.in.ua/tkani/rain/\"><img src=\"http://www.mydivan.in.ua/wp-content/uploads/2018/11/RAIN-10-150x150.jpg\"></a></div>
+";
 				
-			$tkanCat1 = get_field('tk-cat1', 399);
-			foreach ($tkanCat1 as $tkan => $tkanOptions) {
-				//
-				if($tkanOptions['tk-t-show'][0] == 'да') { 
-					$imgUrl = $tkanOptions['tk-t-img']['url'];
-					$title = $tkanOptions['tk-t-name'];
-					?>
-
-					<div class="tkan-single-item">
-						<img class="tkan-single-img" src="<?php echo $imgUrl; ?>" alt="">
-						<div class="tkan-single-pop">
-							<img class="tkan-single-imgb" src="<?php echo $imgUrl; ?>"  />
-							<div class="tkp-item-name"><?php echo  $title; ?></div>
-						</div>
-					</div>
-				<? }
-			}
-
-			$tkanCat2 = get_field('tk-cat2', 399);
-			foreach ($tkanCat2 as $tkan => $tkanOptions) {
-				//
-				if($tkanOptions['tk-t-show'][0] == 'да') { 
-					$imgUrl = $tkanOptions['tk-t-img']['url'];
-					$title = $tkanOptions['tk-t-name'];
-					?>
-
-					<div class="tkan-single-item">
-						<img class="tkan-single-img" src="<?php echo $imgUrl; ?>" alt="">
-						<div class="tkan-single-pop">
-							<img class="tkan-single-imgb" src="<?php echo $imgUrl; ?>"  />
-							<div class="tkp-item-name"><?php echo  $title; ?></div>
-						</div>
-					</div>
-				<? }
-			}
-
-			$tkanCat3 = get_field('tk-cat3', 399);
-			foreach ($tkanCat3 as $tkan => $tkanOptions) {
-				//
-				if($tkanOptions['tk-t-show'][0] == 'да') { 
-					$imgUrl = $tkanOptions['tk-t-img']['url'];
-					$title = $tkanOptions['tk-t-name'];
-					?>
-
-					<div class="tkan-single-item">
-						<img class="tkan-single-img" src="<?php echo $imgUrl; ?>" alt="">
-						<div class="tkan-single-pop">
-							<img class="tkan-single-imgb" src="<?php echo $imgUrl; ?>"  />
-							<div class="tkp-item-name"><?php echo  $title; ?></div>
-						</div>
-					</div>
-				<? }
-			}
-
-
 			// echo "<pre>";
 			// print_r($tkanOptions);
 			// echo "</pre>";
-			echo "</p>
+			echo "
 			<div class=\"clear\"></div>
 			<div class=\"my-tkan-text\">
 			<p>Цена на изделие указана в 3 категории ткани. 
 				Стоимость дивана в других категориях ткани просчитывается менеджером интернет-магазина мягкой мебели MYDIVAN индивидуально.
 			</p>
-			<a href='index.php?p=399'>показать больше тканей</a>
+			<a href='/tkani/'>показать больше тканей</a>
 			</div>";
 }
 add_action('woocommerce_single_product_summary', 'my_single_prod_text', 57);

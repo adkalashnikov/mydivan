@@ -45,7 +45,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 <li <?php post_class( $classes ); ?>>
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
-
+<a href="<?php the_permalink(); ?>">
 
 		<?php
 			/**
@@ -72,8 +72,8 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 */
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
-
-	<a href="<?php the_permalink(); ?>" class="cat-more-btn single">Купить</a>
+</a>
+	<a href="<?php the_permalink(); ?>" class="cat-more-btn single">Посмотреть</a>
 
 
 

@@ -10,8 +10,24 @@ get_header(); // подключаем header.php ?>
 <section>
 <div class="container">
 
+<div class="grid">
+<?php 
+$args = array(
+	'post_parent'            => '399',
+	'post_type'              => array( 'page' ),
+	'posts_per_page'         => '-1',
+);
+$query = new WP_Query( $args );
+if ( $query->have_posts() ) { while ( $query->have_posts() ) { $query->the_post(); ?>
+<div class="itm">
+<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+</div>
+<?php } } wp_reset_postdata(); ?>
+</div>
+<?php
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 		<?php if( have_rows('tk-cat1') ): ?>

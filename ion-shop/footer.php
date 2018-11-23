@@ -49,8 +49,7 @@
 				диваны с креслом в Черкассах и регионах Украины. Все права защищены.</p>
 			</div>
 			<div class="f2-text2">
-				Designed by <a href="http://murzak.org">Murzak</a><br>
-				Powered by <a href="https://vk.com/html_developer">Adkalashnikov</a>
+				Designed by <a href="https://freelancehunt.com/freelancer/Murzak.html">Murzak</a><br>
 			</div>
 		</div>
 	</div>
