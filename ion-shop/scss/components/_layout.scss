@@ -1,3 +1,5 @@
+@import 'helpers';
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -56,6 +58,16 @@ h2 {
     padding-left: 25px;
     background: url("images/list-icon.png") no-repeat 0 5px;
     margin-bottom: 20px;
+  }
+}
+
+.title-group-medium {
+  @extend %title-group;
+
+  div {
+    h2 {
+      text-transform: initial;
+    }
   }
 }
 
