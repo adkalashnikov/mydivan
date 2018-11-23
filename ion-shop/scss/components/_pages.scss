@@ -1,3 +1,5 @@
+@import 'helpers';
+
 .payments-section {
   p {
     color: #000000;
@@ -8,7 +10,7 @@
   }
 
   .title {
-    @extend $title;
+    @extend %title;
   }
 }
 
@@ -36,7 +38,7 @@
   }
 
   .title {
-    @extend $title;
+    @extend %title;
   }
 
   .bg-image {
@@ -50,11 +52,11 @@
 
 .delivery-section {
   h2 {
-    @extend $sub-title;
+    @extend %sub-title;
   }
 
   .title-group {
-    @extend $title-group;
+    @extend %title-group;
   }
 
   .styled-list {
@@ -112,36 +114,54 @@
   }
 
   .text-default {
-    @extend $text-default;
+    @extend %text-default;
   }
 
   .text-secondary {
-    @extend $text-secondary;
+    @extend %text-secondary;
   }
 
   strong {
-    @extend $text-strong;
+    @extend %text-strong;
   }
 }
 
 .warranty-section {
   .title-group {
-    @extend $title-group;
+    @extend %title-group;
   }
 
   .text-secondary {
-    @extend $text-secondary;
+    @extend %text-secondary;
   }
 
   .text-default {
-    @extend $text-default;
+    @extend %text-default;
 
     li {
-      @extend $text-default;
+      @extend %text-default;
     }
   }
 
   strong {
-    @extend $text-strong;
+    @extend %text-strong;
+  }
+}
+
+.contacts-col {
+  p {
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 22px;
+    color: #7B7B7B
+  }
+
+  strong {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    color: #7B7B7B
   }
 }
