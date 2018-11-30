@@ -107,7 +107,7 @@ function wc_wc20_variation_price_format( $price, $product ) {
 }
 
 
-// Вывод категории товара перед названием, на карточках 
+// Вывод категории товара перед названием, на карточках
 function wpa89819_wc_single_product(){
 
     $product_cats = wp_get_post_terms( get_the_ID(), 'product_cat' );
@@ -116,7 +116,18 @@ function wpa89819_wc_single_product(){
 
         $single_cat = array_shift( $product_cats ); ?>
 
-        <div class="product_category_title"><?php echo $single_cat->name; ?></div>
+        <div class="product_category_title">
+            <?php
+                $term = get_queried_object();
+                $cat_single_title = get_field('prod_cat_title', $term);
+
+                if($cat_single_title) {
+                    echo $cat_single_title;
+                } else {
+                    echo $single_cat->name;
+                }
+            ?>
+        </div>
 
 <?php }
 }
@@ -132,8 +143,24 @@ function wpa89819_wc_single_product2(){
 
         $single_cat = array_shift( $product_cats ); ?>
 
-        <div class="single-product_category_title"><?php echo $single_cat->name; ?></div>
+        <div class="single-product_category_title">
+            <?php
+                $catId = '';
 
+                $terms =  get_the_terms( $post->ID, 'product_cat' );
+                if ( $terms && ! is_wp_error( $terms ) ) {
+                    $catId = $terms[0]->term_id;
+                }
+
+                $cat_single_title = get_field('prod_cat_title', 'term_' . $catId);
+
+                if($cat_single_title) {
+                    echo $cat_single_title;
+                } else {
+                    echo $single_cat->name;
+                }
+            ?>
+        </div>
 <?php }
 }
 add_action( 'woocommerce_single_product_summary', 'wpa89819_wc_single_product2', 2 );
